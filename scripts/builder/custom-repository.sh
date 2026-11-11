@@ -11,10 +11,12 @@
 
 FEED_BRANCH="${1:-}"
 
+# Use a public repository instead of the private/inaccessible SuperKali feed.
+# This avoids the GitHub auth failure that breaks `./scripts/feeds update -a`.
 if [ -n "$FEED_BRANCH" ]; then
-    echo "src-git additional_pack https://github.com/SuperKali/openwrt-packages;${FEED_BRANCH}" >> feeds.conf.default
+    echo "src-git additional_pack https://github.com/kenzok8/openwrt-packages;${FEED_BRANCH}" >> feeds.conf.default
     echo "Added custom feed with branch: ${FEED_BRANCH}"
 else
-    echo 'src-git additional_pack https://github.com/SuperKali/openwrt-packages' >> feeds.conf.default
+    echo 'src-git additional_pack https://github.com/kenzok8/openwrt-packages' >> feeds.conf.default
     echo "Added custom feed (default branch)"
 fi
