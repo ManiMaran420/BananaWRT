@@ -5,7 +5,7 @@
   "tracks": [
     "oldstable"
   ],
-  "feed_branch": "main",
+  "feed_branch": "master",
   "checker_pattern": "v24\\.10\\.",
   "packages": [
     "atc-apn-database",
