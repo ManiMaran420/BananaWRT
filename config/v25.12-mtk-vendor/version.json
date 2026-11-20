@@ -5,7 +5,7 @@
   "tracks": [
     "mtk-vendor"
   ],
-  "feed_branch": "main",
+  "feed_branch": "master",
   "repo_url": "https://github.com/SuperKali/immortalwrt-mt798x-rebase",
   "ref_type": "branch",
   "ref": "25.12-linkup",
